@@ -14,7 +14,7 @@
 <meta property="og:description" content="暑假在云南村子里实习的时候写了一个文本游戏的稿子，回来的时候就想拿一些在那边拍的照片做成一个视觉小说（不会画画只能用摄影凑合：）），也想看看能不能把摄影的美学风格和视觉小说做一个结合。一个主要的灵感来源是Chris Marker的《堤》，我想在unity里复刻这种胶片的感觉。   文字的部分我则想做成类似《极乐迪斯科》里的对话栏，而不是renpy那种每次只呈现一句的形式，这样玩家能看到自己之前的选">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-01T08:09:14.000Z">
-<meta property="article:modified_time" content="2023-08-29T12:53:41.356Z">
+<meta property="article:modified_time" content="2023-08-29T14:29:11.479Z">
 <meta property="article:author" content="yaochu21">
 <meta name="twitter:card" content="summary">
     
@@ -351,14 +351,15 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 <p>老实说，这两个的效果都没有让我100%满意，因为我能看到的《堤》的画质本来就不高，里面的颗粒没有着色器生成后的那种规整精细感。但我也不是想把《堤》再演绎一次，所以也没关系。用ChatGPT帮忙把ShaderToy里的glsl转成Unity的hlsl，放进Unity原有的UI Shader模板里，再处理一些语法bug就完成了。搞笑的是，上了之后写的镜头抖动效果之后反而是更简单的那个效果更好…</p>
 <details>
 <summary>Unity版本</summary>
-    Shader "UI/Custom"
-    {
-        Properties
-        {
-            [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
-            _Color ("Tint", Color) = (1,1,1,1)
 
-<pre><code>        _StencilComp (&quot;Stencil Comparison&quot;, Float) = 8
+<pre><code>Shader &quot;UI/Custom&quot;
+&#123;
+    Properties
+    &#123;
+        [PerRendererData] _MainTex (&quot;Sprite Texture&quot;, 2D) = &quot;white&quot; &#123;&#125;
+        _Color (&quot;Tint&quot;, Color) = (1,1,1,1)
+
+        _StencilComp (&quot;Stencil Comparison&quot;, Float) = 8
         _Stencil (&quot;Stencil ID&quot;, Float) = 0
         _StencilOp (&quot;Stencil Operation&quot;, Float) = 0
         _StencilWriteMask (&quot;Stencil Write Mask&quot;, Float) = 255
@@ -584,7 +585,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     &#125;
 &#125;
 </code></pre>
-<details>
+</details>
 
 
 <p>处理完颗粒感来做相机抖动。《堤》不知道是如何拍摄的，可以看到每一张照片都有小幅度的抖动。因为镜头再怎样抖动都是有连贯性的，且会自己向中心调整，所以我们还是用噪音函数来处理：</p>
