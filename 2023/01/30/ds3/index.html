@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="(搬运一下我为春季关卡设计课所写的短文。原文为英文，用DeepL辅助进行了翻译） English&#x2F;Original Version Here “黑暗之魂 III” 是一款由From Software开发的屡获殊荣的第三人称动作角色扮演游戏。游戏设定在一个神秘的中世纪世界中，这个世界已经变得虚弱和腐朽，玩家必须找到并击败三位“薪王”，以解除世界上的诅咒。为了做到这一点，玩家必须穿越不同的地">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关卡分析：黑魂3的洛斯里克高墙 &#x2F; Level Analysis：Dark Souls III">
+<meta property="og:url" content="https://yaochu21.github.io/2023/01/30/ds3/index.html">
+<meta property="og:site_name" content="Yaochu Bi">
+<meta property="og:description" content="(搬运一下我为春季关卡设计课所写的短文。原文为英文，用DeepL辅助进行了翻译） English&#x2F;Original Version Here “黑暗之魂 III” 是一款由From Software开发的屡获殊荣的第三人称动作角色扮演游戏。游戏设定在一个神秘的中世纪世界中，这个世界已经变得虚弱和腐朽，玩家必须找到并击败三位“薪王”，以解除世界上的诅咒。为了做到这一点，玩家必须穿越不同的地">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.imgur.com/nn9t8vm.jpg">
+<meta property="og:image" content="https://i.imgur.com/h8rmxlK.jpg">
+<meta property="og:image" content="https://i.imgur.com/ZSf5wl7.jpg">
+<meta property="og:image" content="https://i.imgur.com/OT4L4Hm.jpg">
+<meta property="og:image" content="https://i.imgur.com/nn9t8vm.jpg">
+<meta property="og:image" content="https://i.imgur.com/rqULr8E.jpg">
+<meta property="article:published_time" content="2023-01-30T11:12:15.000Z">
+<meta property="article:modified_time" content="2023-08-30T16:23:07.148Z">
+<meta property="article:author" content="yaochu21">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/nn9t8vm.jpg">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/yaochu21.github.io">项目</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/2023/08/01/make-shader/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2021/08/28/hello-world/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://yaochu21.github.io/2023/01/30/ds3/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://yaochu21.github.io/2023/01/30/ds3/&text=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://yaochu21.github.io/2023/01/30/ds3/&is_video=false&description=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III&body=Check out this article: https://yaochu21.github.io/2023/01/30/ds3/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://yaochu21.github.io/2023/01/30/ds3/&name=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://yaochu21.github.io/2023/01/30/ds3/&t=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E7%9A%84%E6%95%B4%E4%BD%93%E7%BB%93%E6%9E%84"><span class="toc-number">1.</span> <span class="toc-text">关卡的整体结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%9E%82%E7%9B%B4%E6%80%A7%E7%9A%84%E8%BF%90%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">对垂直性的运用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">3.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">yaochu21</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-01-30T11:12:15.000Z" class="dt-published" itemprop="datePublished">2023-01-30</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>(搬运一下我为春季关卡设计课所写的短文。<a target="_blank" rel="noopener" href="https://www.notion.so/A-Look-at-the-Level-Design-of-Dark-Souls-III-from-The-High-Wall-of-Lothric-f62599d6591947a7ac7f6827a9160a86?pvs=4">原文</a>为英文，用DeepL辅助进行了翻译）</p>
+<p>English&#x2F;Original Version <a target="_blank" rel="noopener" href="https://www.notion.so/A-Look-at-the-Level-Design-of-Dark-Souls-III-from-The-High-Wall-of-Lothric-f62599d6591947a7ac7f6827a9160a86?pvs=4">Here</a></p>
+<p>“黑暗之魂 III” 是一款由From Software开发的屡获殊荣的第三人称动作角色扮演游戏。游戏设定在一个神秘的中世纪世界中，这个世界已经变得虚弱和腐朽，玩家必须找到并击败三位“薪王”，以解除世界上的诅咒。为了做到这一点，玩家必须穿越不同的地区，如城堡、村庄、沼泽和大教堂等，每个地区都有其独特的风格、布局和敌人。在每个关卡中，玩家必须与敌对的敌人战斗，并达到分布在该区域内的2-3个存档点（篝火）之一，以恢复体力槽以继续跑图。还有一些有价值的物品散落在各个角落，有时藏匿起来供玩家拾取。每个区域的终极目标要么是到达下一个区域，要么是击败该区域的Boss。</p>
+<p>在这篇短文中，我将通过对洛斯瑞克高墙（High Wall of Lothric）的深入分析，探讨《黑暗之魂 III》的关卡设计的复杂性。这个区域特别重要和有趣，因为它是游戏中第一个非教程级别的关卡，在这里玩家第一次独自面对一个完整的《黑暗之魂 III》区域。因此，它包含了许多后续关卡将会沿用的核心模式，而没有太多额外的变化和复杂性，这使得它很适合作为例子来审视《黑暗之魂 III》中关卡设计的总体规律。此外，这一关另一个重要的功能的是引导玩家了解区域的运作方式，以免让他们感到不知所措。洛斯瑞克高墙背后的设计师和艺术家们通过对地图细节和地势高低的控制，巧妙地引导了玩家的游戏进程，成功地达成了他们的目标。</p>
+<h2 id="关卡的整体结构"><a href="#关卡的整体结构" class="headerlink" title="关卡的整体结构"></a>关卡的整体结构</h2><p>洛斯里克的高墙向玩家展示了《黑暗之魂III》地图的一般模式。它由一个线性的主路径组成，辅以许多可选的分支。这些分支路径可能引领玩家找到有价值的道具，一条与主路径汇合的捷径，或是一片需要探索的开阔区域。最后，玩家将到达一个最终房间与boss决战（当然，有些boss并不在主路径之上，这也是黑魂三从黑魂一保留下来的开放世界元素）。</p>
+<p><img src="https://i.imgur.com/nn9t8vm.jpg"> </img><br>Fig 1. DSIII大致的关卡设计模板</p>
+<p>大量的可选分支、开放竞技场和替代路径的存在，使得原本大部分线性的关卡变得非常非线性。这在一些后期关卡中尤为明显，比如献祭之路（Road of Sacrifices），在这些关卡中，开放竞技场非常大，为玩家提供了更多选择探索顺序的自由。另一方面，洛瑟里克高墙则是相对线性的关卡之一，没有非常大的开放竞技场。这也是一个合理的设计，因为对于仍在熟悉战斗和寻路的新玩家来说，这样做会减轻一定的压力。尽管如此，分支和替代路径的存在仍然鼓励玩家进行探索，再加上远处美丽的背景以及环境美术营造的神秘感，使得每个黑魂关卡都感觉比实际上要大得多。</p>
+<p><img src="https://i.imgur.com/h8rmxlK.jpg"> </img><br>Fig 2. 洛瑟里克高墙地图。红色点标记表示篝火。绿线标示了主路径。蓝线表示玩家可以解锁的捷径。可选择探索的区域标为紫色。底图来自<a target="_blank" rel="noopener" href="https://www.polygon.com/2016/4/12/11412746/dark-souls-3-high-wall-of-lothric-walkthrough">Polygon</a>. .</p>
+<h2 id="对垂直性的运用"><a href="#对垂直性的运用" class="headerlink" title="对垂直性的运用"></a>对垂直性的运用</h2><p>然而，洛瑟里克高墙最独特的地方在于其对地势和垂直性的巧妙运用。正如关卡名称所示，该区域位于某种城堡的城墙边缘。这样的设定给了设计师在保证建筑合理性的前提下给关卡增添有趣的地势和垂直性的机会。控制地势有两个效果：1. 通过将玩家置于高或低的展望点来调整玩家可以获得的关于当前关卡的信息量，并通过这样做来 2. 控制玩家的进展速度。更具体地说，将玩家置于较高的地势可以让他们更清楚地理解可见区域的空间布局，并制定更好的战斗或探索计划，而将玩家置于低处或较为狭小的空间中则限制了他们可以获得的信息，并产生更强的紧张感。</p>
+<p><video src="https://i.imgur.com/wwzOtzX.mp4"> </video></p>
+<p><a target="_blank" rel="noopener" href="https://i.imgur.com/wwzOtzX.mp4">Vid 1</a>. 洛瑟里克高墙的起始部分。缓慢打开的门以及门后开阔的壮丽景色让玩家感到敬畏、兴奋。</p>
+<p>让我们从头来看这一切是如何完成的。一进入关卡，铺盘在玩家眼前的就是洛瑟里克城堡的广阔景色，玩家立即被置于一个高展望和高地势的位置。洛斯里克高墙在一开始就建立了其整体空间主题，即由高向低。这种模式在整个关卡中反复出现。事实上，整个关卡就是在引领玩家从其最高点走到最低点。而在最后，玩家还必须走下一段宏伟的楼梯才能到达boss房间。这种早早引入的空间规律意味着玩家会在潜意识里更清楚自己最终应该前往的方向。与后期关卡（如深渊大教堂）相比，洛瑟里克高墙的设计对于新玩家（特别是刚刚接触黑魂类游戏的玩家）更加友好。毕竟，这一系列游戏都没有地图，而复杂的空间容易让人感到迷失无助。</p>
+<p><video src="https://i.imgur.com/evUkFk7.mp4"> </video></p>
+<p><a target="_blank" rel="noopener" href="https://i.imgur.com/evUkFk7.mp4">Vid 2</a>. 这一关卡的“主方向”是由上往下（路线上的敌人已经被提前清除）。</p>
+<p>这也不是游戏试图提供寻路提示的唯一方式。例如，远处不断移动的喷火龙也充当着“引导点”（“weenie），为刚开始进入关卡的玩家提供了参考点，也吸引着玩家朝那边探索（视频3：0.01）。毫不奇怪，位于击败boss之前的关卡中的两个存档点（篝火）也都位于较高的位置，这样玩家在死亡和失去进度后总是能够重新定位。</p>
+<p>这种整体的空间模式还意味着设计师将有很多机会给玩家提供展望点（Points of Prospect），而他们在引导玩家方面有许多功能：它们可以让玩家在面对占据区域的一群敌人之前（1）观察敌人的巡逻路线并制定战斗计划（比如趁斧子男走开的时候先击杀那两条狗）（2）更好地构想他们希望前进的方向，或者（3）预览稍后在关卡中将要出现的内容。这一设计技巧在关卡开始时就出现了。玩家到达第一个篝火后能清楚地看到两条可选的路径（都是向下走）。站在楼梯上，玩家可以观察到两条路径的走向以及路途中的敌人（视频3）。</p>
+<p>尽管这些技巧在后面的区域中也被使用，但在洛瑟里克高墙中似乎特别频繁。事实上，设计师似乎非常希望在这个关卡中提供展望的机会，以至于玩家在其中一条路径的末尾能够拾取的物品之一就是一个双筒望远镜。毫无疑问，大量的高展望位置也有助于使这个区域在呈现时对玩家更加直观。</p>
+<p><video src="https://i.imgur.com/1alGj8W.mp4"> </video></p>
+<p><a target="_blank" rel="noopener" href="https://i.imgur.com/1alGj8W.mp4">Vid 3</a>. 玩家在继续前进之前有机会从远处观察两条路径、它们的敌人以及它们的目的地。我们可以看到两条路径末尾都有较高的平台，这些是潜在的展望点。我们还可以看到，在第二条路径上有狗，这是一个更加让人烦恼的敌人，而在第一条路径上远处潜伏着一只龙。</p>
+<p><img src="https://i.imgur.com/ZSf5wl7.jpg"> </img><br>Fig 3. 关卡在玩家到达一个棘手的区域前给玩家提供了一个不错的观测点。</p>
+<p><img src="https://i.imgur.com/OT4L4Hm.jpg"> </img><br>Fig 4. 关卡设计让玩家提前看到了一片未来可能会经过的区域，里面有一个看起来很强大的敌人和很多有价值的道具。</p>
+<p>正如引导玩家进入展望点会让他们感到更安全且更有方向感，消除展望会制造紧张感和压力。此外，如果玩家几乎时刻都清楚自己所在的位置，展望本身的价值也会急剧降低。因此，优秀的关卡还会使用”压缩和释放“的原则来为其空间增加变化，通过紧凑、危险的区域使玩家感到紧张，然后再定期引导他们进入视线良好、远离敌人的安全区域。</p>
+<p>洛瑟里克高墙遵循了一个类似但有些异样的模式，因为它非常有意地将其主要的进展路径都放在了开放空间中。我们在图3上标记了这一关卡中封闭的空间和开放的空间：</p>
+<p><img src="https://i.imgur.com/nn9t8vm.jpg"> </img><br>Fig 5. 室内空间用棕色条纹标注。注意由绿线标注出来的主路径。</p>
+<p>我们能立即发现封闭空间和可选空间之间存在的显著重叠：这意味着绝大多数主路径外的空间都是较为压抑且低展望的。除了boss房间外，在主要的进展路径上只有三个封闭的房间，如地图上标注的那样。</p>
+<p>这种设计意味着，为了方便导航，玩家将有更多的机会观察较为重要的空间（主路径）。然而，这并不意味着这个区域会变得轻松，因为没有一个点可以让玩家观察整个路径，而玩家也无法轻易得知什么才是前往boss战的最短路径。受到好奇心或是优渥战利品的驱使（或只是不幸迷路），玩家也会自然而然地访问封闭和压缩的空间。因此，这些可选的房间恰好起到了压缩的作用，而不会过度损害主要路径的清晰度。</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>在玩家击败最终大厅的boss并推开其把手的大门后，迎接他们的是连绵的山脉和散落在各处的废墟。这是一个奇妙的场景，与关卡开始时的情景相呼应。就像一开始的高台让玩家俯瞰了洛瑟里克高墙的空间一样，在这里玩家有可以看到他们今后必须穿越的后续区域——不死聚落和深渊大教堂在左边清晰可见。</p>
+<p><img src="https://i.imgur.com/rqULr8E.jpg"> </img><br>Fig 6. Raising the banner at the end of The High Wall of Lothric.</p>
+<p>洛斯里克的高墙将其对展望的重视在设计里一直执行到底。通过为进展路径（从上到下）提供一致的空间组织，无数的观察敌人、通道和结构的远处地点，以及封闭和开放的错综复杂交替，FS的团队创造了一个很好的关卡，给玩家提供了一个完美的进入黑魂3主体部分的入口。尽管并非没有缺陷，但他们在建筑布局的选择和利用垂直性来创造有趣和可探索的空间方面的运用，都是其他设计师可以借鉴的要素。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/about/">关于</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a href="/yaochu21.github.io">项目</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E7%9A%84%E6%95%B4%E4%BD%93%E7%BB%93%E6%9E%84"><span class="toc-number">1.</span> <span class="toc-text">关卡的整体结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%9E%82%E7%9B%B4%E6%80%A7%E7%9A%84%E8%BF%90%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">对垂直性的运用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">3.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://yaochu21.github.io/2023/01/30/ds3/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://yaochu21.github.io/2023/01/30/ds3/&text=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://yaochu21.github.io/2023/01/30/ds3/&is_video=false&description=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III&body=Check out this article: https://yaochu21.github.io/2023/01/30/ds3/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://yaochu21.github.io/2023/01/30/ds3/&title=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://yaochu21.github.io/2023/01/30/ds3/&name=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://yaochu21.github.io/2023/01/30/ds3/&t=关卡分析：黑魂3的洛斯里克高墙 / Level Analysis：Dark Souls III"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023
+    yaochu21
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/yaochu21.github.io">项目</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
